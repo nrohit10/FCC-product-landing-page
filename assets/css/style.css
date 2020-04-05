@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Volkhov:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+ 
+ /*Generic */
+ * {
+ 	padding: 0;
+ 	margin: 0;
+ }
+
+
+ body {
+ 	font-family: 'Playfair Display', serif;
+ 	font-size: 12px;
+ }
+
+ ul {
+ 	list-style: none;
+ }
+
+ /* Header */
+#header {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		position: fixed;
+}
+
+ #header-img {
+ 	width: 300px;
+ 	padding-right: 300px;
+ 	height: 40px;
+ }
+
+ #nav-bar {
+ 	display: block;
+ 	margin-left: auto;
+ 	margin-right: 0;
+ }
+
+#nav-bar ul {
+	margin-top: 10px;
+ }
+
+ #nav-bar ul li {
+ 	display: inline-block;
+ 	padding-right: 20px;
+ }
+
+ .nav-link {
+	text-decoration: none;
+	font-size: 25px;
+	padding-left: 40px;
+	color: #fff;
+	font-family: 'Aclonica', sans-serif;
+	vertical-align: center;
+ }
+
+.nav-link:hover {
+	text-decoration: underline;
+}
+
+ #masterpiece {
+ 	background-image: url('https://bgfons.com/uploads/ornaments/ornaments_texture1132.jpg');
+ 	background-size: cover;
+ 	height: 500px;
+	display: block;
+	text-align: center;
+	width: 100%;
+ }
+
+ #masterpiece h2 {
+ 	padding-top: 170px;
+ 	padding-bottom: 20px;
+ 	font-size: 40px;
+ 	font-family: 'Volkhov', serif;
+ 	margin-left: 0;
+ 	margin-right: 0;
+ 	color: #fff;
+ }
+
+ #email {
+ 	font-size: 25px;
+ 	width: 500px;
+ 	border-radius: 6px;
+ 	margin-bottom: 20px;
+ 	padding-left: 10px;
+ 	box-sizing: border-box;
+ 	border: 1px solid black;
+ 	height: 40px;
+ 	text-align: center;
+ }
+
+ #submit {
+ 	font-size: 25px;
+ 	width: 300px;
+ 	border-radius: 6px;
+ 	border: px solid #2e86de;
+ 	color: #fff;
+ 	background-color: transparent;
+ 	font-weight: bold;
+ }
+
+ #submit:hover {
+ 	background-color: #2e86de; /* Green */
+  color: white;
+ }
+
+ #features {
+ 	padding: 20px;
+ 	margin-right: auto;
+ 	margin-left: auto;
+ 	background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+
+.flex-container {
+ 	display: flex;
+ 	flex-direction: row;
+ }
+
+ .icon {
+	width: 100px;
+	text-align: center;
+	color: #5f27cd;
+ }
+
+ .description h2 {
+	font-size: 25px;
+  padding-bottom: 10px;
+ }
+
+ .description p {
+	font-size: 20px;
+  padding-bottom: 10px;
+ }
+
+#features .flex-container {
+	padding: 20px;
+}
+
+#howitworks {
+	margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding: 10px;
+  background-image: url('https://cdn.dribbble.com/users/1742866/screenshots/3966741/38-material-design.jpg');
+  background-size: contain;
+  width: 100%;
+	height: auto;
+}
+
+#video {
+	border-radius: 6px;
+}
+
+#pricing {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 60px;
+  padding-right: 40px;
+}
+
+.price {
+	border: 1px solid black;
+  /* padding: 20px; */
+  text-align: center;
+  margin: 30px;
+  padding-bottom: 10px;
+}
+
+.price h3 {
+	font-size: 25px;
+  background-color: #bdc3c7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.price h2 {
+	font-size: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.price p {
+	font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.price input[type=button] {
+	width: 100px;
+  background-color: #bdc3c7;
+  border: 0px solid black;
+  padding: 10px;
+}
+
+
+@media (max-width: 480px) {
+	body {
+		max-width: 480px;
+  	margin: auto;
+  	background-color: #555;
+  	height: 500px;
+  	color: white;
+  	border-radius: 10px;
+	}
+
+	#nav-bar {
+  	overflow: hidden;
+  	background-color: #333;
+  	position: relative;
+	}
+
+	#nav-bar .nav-link{
+  	display: none;
+	}
+
+	#masterpiece {
+	 	background-image: url('https://bgfons.com/uploads/ornaments/ornaments_texture1132.jpg');
+	 	background-size: cover;
+		display: block;
+		text-align: center;
+		width: 100%;
+		height: auto;
+		padding-bottom: 10px;
+	 }
+
+ #masterpiece h2 {
+	 	padding-top: 70px;
+	 	padding-bottom: 20px;
+	 	font-size: 18px;
+	 	font-family: 'Volkhov', serif;
+	 	margin-left: 0;
+	 	margin-right: 0;
+	 	color: #fff;
+	 }
+
+	 #email {
+	 	font-size: 15px;
+	 	width: 200px;
+	 	border-radius: 6px;
+	 	margin-bottom: 20px;
+	 	padding-left: 10px;
+	 	box-sizing: border-box;
+	 	border: 1px solid black;
+	 	height: 30px;
+	 	text-align: center;
+	 }
+
+	 #submit {
+	 	font-size: 15px;
+	 	width: 100px;
+	 	border-radius: 6px;
+	 	border: 1px solid #2e86de;
+	 	color: #fff;
+	 	background-color: transparent;
+	 	font-weight: bold;
+	 }
+
+	 #submit:hover {
+	 	background-color: #2e86de; /* Green */
+	  color: white;
+	 }
+
+	 .description {
+	 	color: #000;
+	 }
+
+	 .icon {
+	 	margin-right: 10px;
+	 }
+
+	 .description h2 {
+		font-size: 15px;
+	  padding-bottom: 10px;
+	 }
+
+ .description p {
+		font-size: 13px;
+	  padding-bottom: 10px;
+	 }
+
+	#howitworks {
+		background-size: cover;
+  	width: 100%;
+		height: auto;
+	}
+
+	#video {
+		display: block;
+		width: 300px;
+		height: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#pricing.flex-container {
+    display: flex;
+    flex-direction: column;
+	}
+
+	.price {
+		margin: 15px;
+	}
+
+	.price h3 {
+		font-size: 15px;
+	  background-color: #bdc3c7;
+	  padding-top: 15px;
+	  padding-bottom: 15px;
+	}
+
+	.price h2 {
+		font-size: 20px;
+	  padding-top: 6px;
+	  padding-bottom: 6px;
+	}
+
+	.price p {
+		font-size: 14px;
+	  padding-bottom: 10px;
+	}
+
+	.price input[type=button] {
+		width: 100px;
+	  background-color: #bdc3c7;
+	  border: 0px solid black;
+	  padding: 6px;
+	}
+	
+}
